@@ -1,0 +1,25 @@
+// ========================================================
+// BUTTON DEFAULT
+// ========================================================
+.button
+    display: inline-flex
+    padding: .38em 1.15em
+    border: 
+        width: .07em 
+        style: solid 
+        color: #fff
+    font:
+        family: "Roboto Slab"
+        size: 1.62em
+    color: #fff
+    text-transform: uppercase
+    background-image: linear-gradient(to top, rgba(#fff, .5), rgba(#fff, 0))
+    transition: .2s
+    &:hover
+        border-color: $blue
+        background-image: linear-gradient(to top, rgba($blue, .5), rgba(#fff, 0))
+    &:active
+        border-color: $blue
+        background:
+            image: none
+            color: $blue 
