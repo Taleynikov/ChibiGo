@@ -1,20 +1,32 @@
 // ========================================================
-// BUTTON DEFAULT
+// BUTTON
 // ========================================================
 .button
     display: inline-flex
+    justify-content: center
+    align-items: center
     padding: .38em 1.15em
     border: 
-        width: .07em 
+        width: .12rem 
         style: solid 
         color: #fff
     font:
         family: "Roboto Slab"
-        size: 1.62em
+        size: 1.62rem
     color: #fff
     text-transform: uppercase
     background-image: linear-gradient(to top, rgba(#fff, .5), rgba(#fff, 0))
     transition: .2s
+    &_icon
+        &_before
+            .fas, .fab
+                margin-right: .3em
+        &_after
+            .fas, .fab
+                margin-left: .5em
+    &_opt
+        &_minw
+            min-width: 20rem
     &:hover
         border-color: $blue
         background-image: linear-gradient(to top, rgba($blue, .5), rgba(#fff, 0))
@@ -23,3 +35,48 @@
         background:
             image: none
             color: $blue 
+
+// ========================================================
+// TOGGLER
+// ========================================================
+.toggler
+    display: flex
+    &-item
+        & + &
+            margin-left: .5rem
+        &__input
+            display: none
+        &__label
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 2em
+            min-height: 2em
+            padding: 0 .5em
+            border: 
+                width: .12rem
+                style: solid 
+                color: #fff
+            color: #ffffff
+            cursor: pointer
+            text-transform: uppercase
+            background-color: rgba(#fff, .4)
+            line-height: 1
+            position: relative
+        &__input:checked + &__label
+            &:after 
+                content: ""
+                width: calc(100% + .24rem)
+                height: 0.24rem
+                background-color: $blue
+                position: absolute
+                left: -.12rem
+                bottom: -.12rem
+                z-index: 2
+    &_style
+        &_fill
+            .toggler-item__input:checked + .toggler-item__label
+                background-color: rgba($blue, .5)
+                border-color: $blue
+                &:after
+                    content: none

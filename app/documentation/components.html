@@ -7,34 +7,164 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/documentation.css">
+    <script src="https://kit.fontawesome.com/f4813ab233.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="documentation">
-        <div class="documentation-section">
-            <h2>Обычная кнопка</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus blanditiis accusamus iure dolor, corporis non explicabo inventore sit provident perspiciatis rerum, impedit odio ipsum neque labore dolorum ab earum odit?</p>
-            <div class="documentation-example">
-                <button class="button">what is it?</button>
+        <div class="documentation-aside">
+            <div class="documentation-aside-group">
+                <h3>Кнопки</h3>
+                <a href="#buttonCommon">Обычная кнопка</a>
+                <a href="#buttonIconBefore">Иконка до текста</a>
+                <a href="#buttonIconAfter">Иконка после текста</a>
+                <a href="#buttonMinWidth">"Минимальная ширина"</a>
             </div>
-            <textarea readonly><button class="button">what is it?</button></textarea>
+            <div class="documentation-aside-group">
+                <h3>Переключатели</h3>
+                <a href="#toggleSingle">Одиночный выбор</a>
+                <a href="#toggleMultiply">Множественный выбор</a>
+                <a href="#toggleFill">Заливка</a>
+            </div>
         </div>
-
-        <div class="documentation-section">
-            <h2>Example</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus blanditiis accusamus iure dolor, corporis non explicabo inventore sit provident perspiciatis rerum, impedit odio ipsum neque labore dolorum ab earum odit?</p>
-            <div class="documentation-example">
-                <button>asd</button>
+        <div class="documentation-content">
+            <div class="documentation-section">
+                <h2 id="buttonCommon">Обычная кнопка</h2>
+                <p>Обычная ничем не примечательная кнопка.</p>
+                <div class="documentation-example">
+                    <button class="button">what is it?</button>
+                </div>
+                <textarea readonly rows="1"><button class="button">what is it?</button></textarea>
             </div>
-            <textarea readonly><code></code></textarea>
-        </div>
-
-        <div class="documentation-section">
-            <h2>Example</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus blanditiis accusamus iure dolor, corporis non explicabo inventore sit provident perspiciatis rerum, impedit odio ipsum neque labore dolorum ab earum odit?</p>
-            <div class="documentation-example">
-                <button>asd</button>
+    
+            <div class="documentation-section">
+                <h2 id="buttonIconBefore">Кнопка с иконкой до текста</h2>
+                <p>Иконка размещается перед текстом и использует класс модификатор <code>.button_icon_before</code></p>
+                <div class="documentation-example">
+                    <button class="button button_icon_before"><i class="fab fa-twitch"></i>sign up</button>
+                </div>
+                <textarea readonly rows="1"><button class="button button_icon_before"><i class="fab fa-twitch"></i>sign up</button></textarea>
             </div>
-            <textarea readonly><code></code></textarea>
+    
+            <div class="documentation-section">
+                <h2 id="buttonIconAfter">Кнопка с иконкой после текста</h2>
+                <p>Иконка размещается после текста и использует класс модификатор <code>.button_icon_after</code></p>
+                <div class="documentation-example">
+                    <button class="button button_icon_after">sign up<i class="fab fa-twitch"></i></button>
+                </div>
+                <textarea readonly rows="1"><button class="button button_icon_after">sign up<i class="fab fa-twitch"></i></button></textarea>
+            </div>
+    
+            <div class="documentation-section">
+                <h2 id="buttonMinWidth">Кнопка "минимальной ширины"</h2>
+                <p>Кнопка с заданной шириной <b>root * 20</b>, например при размере текста 16px, будет иметь ширину в 320px. Использует класс модификатор <code>.button_opt_minw</code></p>
+                <div class="documentation-example">
+                    <button class="button button_opt_minw">push me</button>
+                </div>
+                <textarea readonly rows="1"><button class="button button_opt_minw">push me</button></textarea>
+            </div>
+
+            <div class="documentation-section">
+                <h2 id="toggleSingle">Одиночный выбор</h2>
+                <p>Переключатели с возможностью выбора одного пункта</p>
+                <div class="documentation-example">
+                    <div class="toggler">
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="ex1-1" type="radio" name="ex1" checked>
+                            <label class="toggler-item__label" for="ex1-1">pick</label>
+                        </div>
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="ex1-2" type="radio" name="ex1">
+                            <label class="toggler-item__label" for="ex1-2">one</label>
+                        </div>
+                    </div>
+                </div>
+                <textarea readonly rows="11">
+<div class="toggler">
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="ex1-1" type="radio" name="ex1" checked>
+        <label class="toggler-item__label" for="ex1-1">pick</label>
+    </div>
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="ex1-2" type="radio" name="ex1">
+        <label class="toggler-item__label" for="ex1-2">one</label>
+    </div>
+</div>
+                </textarea>
+            </div>
+
+            <div class="documentation-section">
+                <h2 id="toggleMultiply">Множественный выбор</h2>
+                <p>Переключатели с возможностью выбора множества пунктов</p>
+                <div class="documentation-example">
+                    <div class="toggler">
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="ex2-1" type="checkbox" name="ex2" checked>
+                            <label class="toggler-item__label" for="ex2-1">pick</label>
+                        </div>
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="ex2-2" type="checkbox" name="ex2">
+                            <label class="toggler-item__label" for="ex2-2">any</label>
+                        </div>
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="ex2-3" type="checkbox" name="ex2">
+                            <label class="toggler-item__label" for="ex2-3">some</label>
+                        </div>
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="ex2-4" type="checkbox" name="ex2" checked>
+                            <label class="toggler-item__label" for="ex2-4">items</label>
+                        </div>
+                    </div>
+                </div>
+                <textarea readonly rows="19">
+<div class="toggler">
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="ex2-1" type="checkbox" name="ex2" checked>
+        <label class="toggler-item__label" for="ex2-1">pick</label>
+    </div>
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="ex2-2" type="checkbox" name="ex2">
+        <label class="toggler-item__label" for="ex2-2">any</label>
+    </div>
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="ex2-3" type="checkbox" name="ex2">
+        <label class="toggler-item__label" for="ex2-3">some</label>
+    </div>
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="ex2-4" type="checkbox" name="ex2" checked>
+        <label class="toggler-item__label" for="ex2-4">items</label>
+    </div>
+</div>
+                </textarea>
+            </div>
+
+            <div class="documentation-section">
+                <h2 id="toggleFill">Заливка</h2>
+                <p>Переключатели с полной заливкой. Использует класс модификатор <code>.toggler_style_fill</code></p>
+                <div class="documentation-example">
+                    <div class="toggler toggler_style_fill">
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="lang1" type="radio" name="lang" checked>
+                            <label class="toggler-item__label" for="lang1">en</label>
+                        </div>
+                        <div class="toggler-item">
+                            <input class="toggler-item__input" id="lang2" type="radio" name="lang">
+                            <label class="toggler-item__label" for="lang2">ru</label>
+                        </div>
+                    </div>
+                </div>
+                <textarea readonly rows="11">
+<div class="toggler toggler_style_fill">
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="lang1" type="radio" name="lang" checked>
+        <label class="toggler-item__label" for="lang1">en</label>
+    </div>
+    <div class="toggler-item">
+        <input class="toggler-item__input" id="lang2" type="radio" name="lang">
+        <label class="toggler-item__label" for="lang2">ru</label>
+    </div>
+</div>
+                </textarea>
+            </div>
         </div>
     </div>
 </body>

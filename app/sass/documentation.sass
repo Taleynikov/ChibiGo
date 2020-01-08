@@ -1,8 +1,22 @@
 .documentation
+    display: flex
     width: 100%
-    max-width: 980px
+    max-width: 1280px
     margin: 0 auto
     padding: 0 10px
+    &-aside
+        padding-right: 1em
+        a
+            display: block
+            white-space: nowrap
+            margin-left: 1em
+            color: #333333
+            & + a 
+            margin-top: 0.3em
+        &-group
+            padding: 0.5em 0
+    &-content
+        flex-grow: 1
     &-section
         & + &
             margin-top: 20px
@@ -11,9 +25,15 @@
         textarea
             display: block
             width: 100%
+            font-family: monospace
             padding: 10px 15px
             border: none
             background-color: #eaeaea
+            resize: none
+        code
+            font-family: monospace
+            background-color: #eaeaea
+            padding: .2em
     &-example
         background-color: #333333
         padding: 15px
