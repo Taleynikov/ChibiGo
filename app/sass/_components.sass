@@ -80,3 +80,142 @@
                 border-color: $blue
                 &:after
                     content: none
+
+// ========================================================
+// NAVIGATION
+// ======================================================== 
+.nav
+    font-family: "Roboto Slab"
+    font-size: 2rem
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
+    &-list
+        display: flex
+        justify-content: center
+        li + li
+            margin-left: .09em
+        &__input
+            display: none
+        &__item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 7em
+            height: 2.2em
+            padding-bottom: .25em
+            cursor: pointer
+            position: relative
+            background: rgba($dark, .7)
+            transform: skew(-35deg)
+            &:before
+                content: attr(data-text)
+                transform: skew(35deg)
+            &:after
+                content: ""
+                width: 100%
+                border-bottom: 
+                    width: .25em 
+                    style: solid 
+                    color: rgba(#fff, .5)
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+            &:hover
+                background: linear-gradient(to top, rgba(#fff, .45), rgba($dark, .45))
+                &:after
+                    border-color: #fff
+        &__input:checked + &__item
+            background: linear-gradient(to top, rgba($blue, .5), rgba($dark, .7))
+            &:after
+                border-color: $blue
+
+// ========================================================
+// PROFILE
+// ======================================================== 
+.profile
+    width: 35rem
+    &__shape
+        fill: none
+        stroke: #fff
+        stroke-width: .12rem
+        fill-rule: evenodd
+        position: relative
+    &__ui
+        fill: rgba($dark, .5)
+    &__avatar
+        width: 6em
+        height: 6em
+    &__nickname
+        font-family: "Roboto Slab"
+        font-size: 1.5rem
+        fill: #fff
+        text-transform: uppercase
+    &__logout
+        cursor: pointer
+        transition: .2s
+        &:hover
+            fill: rgba($blue, .45)
+            stroke: $blue
+
+// ========================================================
+// LOGO
+// ========================================================    
+.logo
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    font-weight: 600
+    color: #fff
+    text-decoration: none
+    text-transform: uppercase
+    &__text
+        margin-top: .5em
+    &__img
+        width: 2em
+        height: 2em
+        margin: .15em
+        &-path
+            stroke: none
+            fill-rule: evenodd
+            fill: #fff
+            fill-opacity: 1
+
+// ========================================================
+// COPYRIGHT
+// ========================================================   
+.copyright
+    display: inline-block
+    color: #fff
+    &__link
+        display: inline-block
+        padding: .1em .3em 
+        color: inherit
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        position: relative
+        transition: .3s .2s
+        &:before, &:after
+            content: ""
+            width: 0
+            height: 100%
+            position: absolute
+            top: 0
+            z-index: -1
+            transition: .2s
+        &:before
+            right: 0
+            border:
+                top: 1px solid #fff
+                bottom: 1px solid #fff
+        &:after
+            background-color: #fff
+            left: 0
+            overflow: hidden
+            transition-delay: .2s
+        &:hover
+            color: #000
+            &:before, &:after
+                width: 100%
