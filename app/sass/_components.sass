@@ -1,4 +1,24 @@
 // ========================================================
+// CONTAINERS
+// ========================================================
+.container
+    width: 100%
+    max-width: 980px
+    color: #ffffff
+    background-color: rgba($dark, .7)
+    backdrop-filter: blur(.2em)
+    &__header, &__footer
+        background-color: rgba($dark, .7)
+    &__header
+        padding: .6rem 1.2rem
+    &__footer
+        display: flex
+        justify-content: space-around
+        padding: .6rem
+    &__content
+        padding: .6rem 1.2rem
+
+// ========================================================
 // BUTTON
 // ========================================================
 .button
@@ -108,6 +128,7 @@
             position: relative
             background: rgba($dark, .7)
             transform: skew(-35deg)
+            transition: .2s
             &:before
                 content: attr(data-text)
                 transform: skew(35deg)
@@ -142,6 +163,7 @@
         stroke-width: .12rem
         fill-rule: evenodd
         position: relative
+        transition: .2s
     &__ui
         fill: rgba($dark, .5)
     &__avatar
@@ -154,10 +176,15 @@
         text-transform: uppercase
     &__logout
         cursor: pointer
-        transition: .2s
         &:hover
             fill: rgba($blue, .45)
             stroke: $blue
+    &__link
+        cursor: pointer
+    &__link:hover &__ui, &__link:hover &__avatar-border
+        stroke: $blue
+    &__link:hover &__ui
+        fill: rgba($blue, .45)
 
 // ========================================================
 // LOGO
