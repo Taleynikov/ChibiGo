@@ -3,13 +3,22 @@
     <style>
       .cls-1 {
         fill: none;
+      }
+
+      .cls-1, .cls-2 {
         stroke: #f0f;
         stroke-width: 2px;
         fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f0f;
       }
     </style>
   </defs>
   <path class="cls-1" d="M27,68H95L63,12H6L1,22Z"/>
   <path class="cls-1" d="M70,12H370l27,46-5,10H102Z"/>
   <path class="cls-1" d="M376,11.422L401.6,55h13.964L440,11.422,435.345,2H381.818Z"/>
+  <path class="cls-1" d="M417,15V10H399V39h18V34"/>
+  <path class="cls-2" d="M407,27.154h10.49V30L427,24.5,417.488,19v2.847H407v5.307Z"/>
 </svg>
