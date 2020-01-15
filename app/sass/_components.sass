@@ -40,11 +40,11 @@
     transition: .2s
     &_icon
         &_before
-            .fas, .fab
+            .button__icon
                 margin-right: .3em
         &_after
-            .fas, .fab
-                margin-left: .5em
+            .button__icon
+                margin-left: .3em
     &_opt
         &_minw
             min-width: 20rem
@@ -56,6 +56,9 @@
         background:
             image: none
             color: $blue 
+    &__icon
+        width: 1.15em
+        height: 1.15em
 
 // ========================================================
 // TOGGLER
@@ -285,3 +288,12 @@
                     display: none
                 .volume-icon__mute
                     display: block
+
+// ========================================================
+// TWITCH ICON
+// ========================================================
+.twitch-icon
+    &__item
+        fill: #fff
+        &_evenodd
+            fill-rule: evenodd
