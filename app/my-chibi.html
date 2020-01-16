@@ -25,6 +25,16 @@
                     <li>
                         <input type="radio" name="nav" id="navItem1" class="nav-list__input" checked>
                         <label for="navItem1" class="nav-list__item" data-text="my chibi"></label>
+                        <ul class="nav-list nav-list-dropdown">
+                            <li>
+                                <input type="radio" name="nav1" id="navItem1-1" class="nav-list__input nav-list-dropdown__input" checked>
+                                <label for="navItem1-1" class="nav-list-dropdown__item nav-list__item" data-text="Viewer"></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="nav1" id="navItem1-2" class="nav-list__input nav-list-dropdown__input">
+                                <label for="navItem1-2" class="nav-list-dropdown__item nav-list__item" data-text="Streamer"></label>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <input type="radio" name="nav" id="navItem2" class="nav-list__input">
@@ -48,11 +58,27 @@
                 </div>
             </div>
         </header> 
+        
+        <form class="container container-my-chibi container-my-chibi_opt_viewer">
+            <div class="container__header">
+                <h2 class="container__title">chibi viewer options</h2>
+            </div>
+            <div class="container__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi animi non placeat dolores esse ducimus temporibus nulla ratione sunt! Ut necessitatibus minus vero quis placeat, fugiat tempora inventore doloribus nihil?
+                Nostrum temporibus, voluptatum dignissimos distinctio repellendus commodi minima dicta quis aliquam error magni amet quas doloremque voluptas sed fugit, soluta deserunt veritatis a! Delectus sed molestias ratione ipsam earum repellat.
+                Error vitae animi fugit ipsa dignissimos culpa fugiat illum possimus reiciendis neque quibusdam hic nisi, accusantium quam laborum quasi sed ratione necessitatibus? Itaque, natus inventore? Quis eaque atque tenetur sit.
+                Ex, facere itaque quis at labore similique delectus officia ut. Qui facere magni inventore sunt ea enim reprehenderit fugiat tempore voluptates numquam modi est veniam officiis cumque, dolor unde excepturi!
+                Doloribus aspernatur impedit repudiandae tenetur vitae quisquam est enim ipsam, dolor numquam deleniti praesentium? Corporis quasi animi laboriosam mollitia delectus nobis veritatis eius corrupti! Excepturi possimus voluptatibus exercitationem culpa modi.
+            </div>
+            <div class="container__footer">
+                <button class="button button_opt_minw">save changes</button>
+            </div>
+        </form>
+
         <footer class="app-footer">
             <svg class="profile" viewBox="0 0 442 70">
                 <defs>
                     <clipPath id="profileAvatar">
-                        
                         <path d="M27,68H95L63,12H6L1,22Z"/>          
                     </clipPath>
                     

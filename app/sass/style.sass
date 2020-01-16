@@ -4,8 +4,11 @@
 
 @import _components.sass
 
-.app-wrap, .app-header, .app-footer
+.app-wrap, .app-header, .app-footer, .app-content
     position: fixed
+
+.app-header, .app-footer
+    z-index: 2
 
 .app-wrap
     width: 100%
@@ -65,6 +68,13 @@
         bottom: 2rem
         transform: translate(-50%, 0)
 
+.container-my-chibi
+    width: 30%
+    position: fixed
+    top: 15rem
+    right: 10rem
+    bottom: 10rem
+    
 .sign-up-background
     width: 106%
     height: 106%
