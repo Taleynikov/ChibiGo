@@ -64,17 +64,323 @@
                 <h2 class="container__title">chibi viewer options</h2>
             </div>
             <div class="container__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi animi non placeat dolores esse ducimus temporibus nulla ratione sunt! Ut necessitatibus minus vero quis placeat, fugiat tempora inventore doloribus nihil?
-                Nostrum temporibus, voluptatum dignissimos distinctio repellendus commodi minima dicta quis aliquam error magni amet quas doloremque voluptas sed fugit, soluta deserunt veritatis a! Delectus sed molestias ratione ipsam earum repellat.
-                Error vitae animi fugit ipsa dignissimos culpa fugiat illum possimus reiciendis neque quibusdam hic nisi, accusantium quam laborum quasi sed ratione necessitatibus? Itaque, natus inventore? Quis eaque atque tenetur sit.
-                Ex, facere itaque quis at labore similique delectus officia ut. Qui facere magni inventore sunt ea enim reprehenderit fugiat tempore voluptates numquam modi est veniam officiis cumque, dolor unde excepturi!
-                Doloribus aspernatur impedit repudiandae tenetur vitae quisquam est enim ipsam, dolor numquam deleniti praesentium? Corporis quasi animi laboriosam mollitia delectus nobis veritatis eius corrupti! Excepturi possimus voluptatibus exercitationem culpa modi.
+                <div class="scrollbox">
+                    <div class="scrollbox__container">
+                        <div class="chibi-settings-list">
+                            <div class="chibi-settings-list-item">
+                                <h3 class="chibi-settings-list-item__title">Body color</h3>
+                                <div class="chibi-settings-options chibi-settings-options_type_small">
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="bodyColor1" class="chibi-settings-options-item__input" name="bodyColor" value="#" checked>
+                                        <label for="bodyColor1" class="chibi-settings-options-item__label chibi-settings-options-item__label_body-color_white"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="bodyColor2" class="chibi-settings-options-item__input" name="bodyColor" value="#">
+                                        <label for="bodyColor2" class="chibi-settings-options-item__label chibi-settings-options-item__label_body-color_black"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="bodyColor3" class="chibi-settings-options-item__input" name="bodyColor" value="#">
+                                        <label for="bodyColor3" class="chibi-settings-options-item__label chibi-settings-options-item__label_body-color_green"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="bodyColor4" class="chibi-settings-options-item__input" name="bodyColor" value="#">
+                                        <label for="bodyColor4" class="chibi-settings-options-item__label chibi-settings-options-item__label_body-color_red"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="bodyColor5" class="chibi-settings-options-item__input" name="bodyColor" value="#">
+                                        <label for="bodyColor5" class="chibi-settings-options-item__label chibi-settings-options-item__label_body-color_dark"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chibi-settings-list-item">
+                                <h3 class="chibi-settings-list-item__title">eye color</h3>
+                                <div class="chibi-settings-options chibi-settings-options_type_small">
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="eyeColor1" class="chibi-settings-options-item__input" name="eyeColor" value="#" checked>
+                                        <label for="eyeColor1" class="chibi-settings-options-item__label chibi-settings-options-item__label_eye-color_blue"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="eyeColor2" class="chibi-settings-options-item__input" name="eyeColor" value="#">
+                                        <label for="eyeColor2" class="chibi-settings-options-item__label chibi-settings-options-item__label_eye-color_red"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="eyeColor3" class="chibi-settings-options-item__input" name="eyeColor" value="#">
+                                        <label for="eyeColor3" class="chibi-settings-options-item__label chibi-settings-options-item__label_eye-color_yellow"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="eyeColor4" class="chibi-settings-options-item__input" name="eyeColor" value="#">
+                                        <label for="eyeColor4" class="chibi-settings-options-item__label chibi-settings-options-item__label_eye-color_brown"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="eyeColor5" class="chibi-settings-options-item__input" name="eyeColor" value="#">
+                                        <label for="eyeColor5" class="chibi-settings-options-item__label chibi-settings-options-item__label_eye-color_green"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="eyeColor6" class="chibi-settings-options-item__input" name="eyeColor" value="#">
+                                        <label for="eyeColor6" class="chibi-settings-options-item__label chibi-settings-options-item__label_eye-color_sky"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chibi-settings-list-item">
+                                <h3 class="chibi-settings-list-item__title">hair color</h3>
+                                <div class="chibi-settings-options chibi-settings-options_type_small">
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor1" class="chibi-settings-options-item__input" name="hairColor" value="#" checked>
+                                        <label for="hairColor1" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_10"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor2" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor2" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_30"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor3" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor3" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_38"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor4" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor4" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_39"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor5" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor5" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_46"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor6" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor6" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_48"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor7" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor7" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_52"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor8" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor8" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_56"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor9" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor9" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_58"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor10" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor10" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_60"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor11" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor11" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_64"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor12" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor12" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_68"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor13" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor13" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_69"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor14" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor14" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_71"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor15" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor15" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_72"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor16" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor16" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_76"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor17" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor17" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_78"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor18" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor18" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_80"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor19" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor19" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_82"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor20" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor20" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_88"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor21" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor21" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_90"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor22" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor22" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_104"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor23" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor23" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_106"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor24" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor24" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_107"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor25" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor25" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_112"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor26" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor26" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_113"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor27" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor27" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_114"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor28" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor28" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_117"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor29" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor29" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_130"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor30" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor30" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_140"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor31" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor31" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_142"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor32" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor32" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_150"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor33" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor33" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_164"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor34" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor34" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_168"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor35" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor35" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_172"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor36" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor36" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_178"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor37" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor37" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_190"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor38" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor38" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_191"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor39" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor39" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_192"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor40" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor40" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_194"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor41" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor41" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_195"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor42" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor42" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_197"></label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairColor43" class="chibi-settings-options-item__input" name="hairColor" value="#">
+                                        <label for="hairColor43" class="chibi-settings-options-item__label chibi-settings-options-item__label_hair-color_200"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chibi-settings-list-item">
+                                <h3 class="chibi-settings-list-item__title">hairstyle</h3>
+                                <div class="chibi-settings-options chibi-settings-options_type_medium">
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairStyle1" class="chibi-settings-options-item__input" name="hairStyle" value="#" checked>
+                                        <label for="hairStyle1" class="chibi-settings-options-item__label">
+                                            <img src="https://i.dlpng.com/static/png/6040060-club-penguin-hair-clip-art-black-hair-png-download-655663-black-hair-transparent-655_663_preview.png" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairStyle2" class="chibi-settings-options-item__input" name="hairStyle" value="#">
+                                        <label for="hairStyle2" class="chibi-settings-options-item__label">
+                                            <img src="https://i.dlpng.com/static/png/6040060-club-penguin-hair-clip-art-black-hair-png-download-655663-black-hair-transparent-655_663_preview.png" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairStyle3" class="chibi-settings-options-item__input" name="hairStyle" value="#">
+                                        <label for="hairStyle3" class="chibi-settings-options-item__label">
+                                            <img src="https://i.dlpng.com/static/png/6040060-club-penguin-hair-clip-art-black-hair-png-download-655663-black-hair-transparent-655_663_preview.png" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairStyle4" class="chibi-settings-options-item__input" name="hairStyle" value="#">
+                                        <label for="hairStyle4" class="chibi-settings-options-item__label">
+                                            <img src="https://i.dlpng.com/static/png/6040060-club-penguin-hair-clip-art-black-hair-png-download-655663-black-hair-transparent-655_663_preview.png" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="hairStyle5" class="chibi-settings-options-item__input" name="hairStyle" value="#">
+                                        <label for="hairStyle5" class="chibi-settings-options-item__label">
+                                            <img src="https://i.dlpng.com/static/png/6040060-club-penguin-hair-clip-art-black-hair-png-download-655663-black-hair-transparent-655_663_preview.png" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chibi-settings-list-item">
+                                <h3 class="chibi-settings-list-item__title">face</h3>
+                                <div class="chibi-settings-options chibi-settings-options_type_medium">
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="face1" class="chibi-settings-options-item__input" name="face" value="#" checked>
+                                        <label for="face1" class="chibi-settings-options-item__label">
+                                            <img src="https://p7.hiclipart.com/preview/290/674/547/chibi-drawing-anime-league-of-legends-art-chibi.jpg" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="face2" class="chibi-settings-options-item__input" name="face" value="#">
+                                        <label for="face2" class="chibi-settings-options-item__label">
+                                            <img src="https://p7.hiclipart.com/preview/290/674/547/chibi-drawing-anime-league-of-legends-art-chibi.jpg" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="face3" class="chibi-settings-options-item__input" name="face" value="#">
+                                        <label for="face3" class="chibi-settings-options-item__label">
+                                            <img src="https://p7.hiclipart.com/preview/290/674/547/chibi-drawing-anime-league-of-legends-art-chibi.jpg" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="face4" class="chibi-settings-options-item__input" name="face" value="#">
+                                        <label for="face4" class="chibi-settings-options-item__label">
+                                            <img src="https://p7.hiclipart.com/preview/290/674/547/chibi-drawing-anime-league-of-legends-art-chibi.jpg" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                    <div class="chibi-settings-options-item">
+                                        <input type="radio" id="face5" class="chibi-settings-options-item__input" name="face" value="#">
+                                        <label for="face5" class="chibi-settings-options-item__label">
+                                            <img src="https://p7.hiclipart.com/preview/290/674/547/chibi-drawing-anime-league-of-legends-art-chibi.jpg" class="chibi-settings-options-item__img">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="container__footer">
                 <button class="button button_opt_minw">save changes</button>
             </div>
         </form>
-
+        
         <footer class="app-footer">
             <svg class="profile" viewBox="0 0 442 70">
                 <defs>
@@ -113,6 +419,279 @@
                 </svg>
             </div>
         </footer>
+        
+        <div class="nature-layers">
+            <svg class="nature-layers__item nature-layers_side_left" viewBox="0 0 263 720">
+                <path class="nature-layers__backdrop" d="M72,0L233,116l-112,7-12,15,39,32L94,235l6,10L60,265,16,249,7,284l2,41,20-28h8v6L13,363,24,535l45-31,4,45-4,28L33,643v6l23-27,56-35,59-19,73,8-17,29,17,17-13,13,27,7-8,8,12,17-23,47,5,1-3,5H169l-18-22,8-4-3-23-29,16-33,8,26,19-7,6H0V1ZM1,198l4,58,18-49Zm23,12-6,22,25-15Z"/>
+                <g>
+                    <path class="cls-1" d="M0,720H39L14,375,0,379V720Z"/>
+                    <path class="cls-2" d="M0,375l38-79H29L10,324,4,289l-4,6v80Z"/>
+                    <path class="cls-3" d="M0,379l14-4V364l24-61v-7L0,375v4Z"/>
+                    <path class="cls-4" d="M10,324L8,283l18-71L0,289v6l4-6Z"/>
+                    <path class="cls-5" d="M26,212l-6-4L6,250,2,200l-2-2v91Z"/>
+                    <path class="cls-6" d="M0,198l2,2,18,8,6,4,13,7,24-16,32,32,17-18L0,161v37Z"/>
+                    <path class="cls-7" d="M63,203L-1,244l52-13Z"/>
+                    <path class="cls-8" d="M51,231l12-28,32,32Z"/>
+                    <path class="cls-9" d="M0,244l51-9,42,13,8-2-6-11-44-4Z"/>
+                    <path class="cls-10" d="M26,253l31-16,36,11L60,265l3-21Z"/>
+                    <path class="cls-11" d="M60,265l3-21-37,9Z"/>
+                    <path class="cls-12" d="M57,237l-6-2L2,244l24,9Z"/>
+                    <path class="cls-13" d="M112,217L93,176l57-5L51,142Z"/>
+                    <path class="cls-14" d="M112,217L93,176l56-5Z"/>
+                    <path class="cls-15" d="M112,217L0,161V142l53-18,97,47L51,142Z"/>
+                    <path class="cls-16" d="M53,124L28,70,0,101v41Z"/>
+                    <path class="cls-17" d="M105,137l15-17,115-3-113,7-14,16Z"/>
+                    <path class="cls-18" d="M28,70l25,54,97,47Z"/>
+                    <path class="cls-19" d="M0,101V66L30,50l8,23-3,3-7-6Z"/>
+                    <path class="cls-20" d="M35,76l3-3L30,50l205,67-115,3-13,15Z"/>
+                    <path class="cls-21" d="M0,66V0L43,9,14,10,28,24l207,93L30,50Z"/>
+                    <path class="cls-22" d="M0,0L43,9,14,10,28,24l207,93L73,0H0Z"/>
+                </g>
+                <g>
+                    <path class="cls-23" d="M42,710l8-11-25-4L15,708Z"/>
+                    <path class="cls-24" d="M42,710l8,10H64Z"/>
+                    <path class="cls-25" d="M42,710l49-15-41,4Z"/>
+                    <path class="cls-26" d="M84,710l11-16L42,710H84Z"/>
+                    <path class="cls-27" d="M84,710l11-16,27,21Z"/>
+                    <path class="cls-28" d="M122,715l-38-5,3,10h27Z"/>
+                    <path class="cls-29" d="M84,710l3,10H64L42,710H84Z"/>
+                    <path class="cls-30" d="M42,710H15l7,10H50Z"/>
+                    <path class="cls-31" d="M0,706l42,4L0,711v-5Z"/>
+                    <path class="cls-32" d="M0,711l6,9H0v-9Z"/>
+                    <path class="cls-33" d="M0,678l3-21,27-8Z"/>
+                    <path class="cls-34" d="M3,657l27-8,22-37L6,638Z"/>
+                    <path class="cls-35" d="M52,612l-34-6L6,638Z"/>
+                    <path class="cls-36" d="M18,606l34,6,19-37Z"/>
+                    <path class="cls-37" d="M18,606l53-31H30Z"/>
+                    <path class="cls-38" d="M30,575H71l3-26Z"/>
+                    <path class="cls-39" d="M30,575l44-26-4-46Z"/>
+                    <path class="cls-40" d="M30,575L14,539l56-36Z"/>
+                    <path class="cls-36" d="M30,575L14,539v65Z"/>
+                    <path class="cls-41" d="M14,539v65L0,592V555Z"/>
+                    <path class="cls-38" d="M14,604L0,592v40l4,3Z"/>
+                    <path class="cls-42" d="M4,635l-4-3v20Z"/>
+                    <path class="cls-43" d="M0,652l4-17,10-31,17-31L18,606,6,638,3,657,0,678V652Z"/>
+                    <path class="cls-44" d="M16,694l30-17,5,22Z"/>
+                    <path class="cls-45" d="M46,677l5,22,45-4L77,662Z"/>
+                    <path class="cls-46" d="M77,662l19,33,32-8Z"/>
+                    <path class="cls-47" d="M128,687L77,662l29-14Z"/>
+                    <path class="cls-48" d="M106,648l22,39,44-21Z"/>
+                    <path class="cls-49" d="M106,648l33-15,33,33Z"/>
+                    <path class="cls-50" d="M139,633l33,33,41-35Z"/>
+                    <path class="cls-51" d="M139,633l74-2-37-18Z"/>
+                    <path class="cls-48" d="M176,613l37,18,32-56Z"/>
+                    <path class="cls-52" d="M12,692l29-19L31,650Z"/>
+                    <path class="cls-53" d="M41,673l30-14L55,622,31,650Z"/>
+                    <path class="cls-54" d="M71,659L55,622l56-36Z"/>
+                    <path class="cls-55" d="M111,586l8,48L71,659Z"/>
+                    <path class="cls-41" d="M119,634l-8-48,61-19Z"/>
+                    <path class="cls-56" d="M172,567l-53,67,51-24Z"/>
+                    <path class="cls-48" d="M170,610l2-43,73,8Z"/>
+                    <path class="cls-57" d="M0,700l12-8,4,2L0,708v-8Z"/>
+                    <path class="cls-58" d="M12,692l4,2,30-17,25-18L41,673Z"/>
+                    <path class="cls-59" d="M46,677l25-18,48-25,126-59L139,633Z"/>
+                </g>
+                <g>
+                    <path class="cls-60" d="M169,720l-20-23,48-22-24,45h-4Z"/>
+                    <path class="cls-61" d="M197,675l-43-19,4,37Z"/>
+                    <path class="cls-62" d="M197,675l1-47-32-15-4,47Z"/>
+                    <path class="cls-63" d="M198,628l-1,47,27,4-15-20Z"/>
+                    <path class="cls-62" d="M209,659l15,20,36-38-27-7Z"/>
+                    <path class="cls-64" d="M224,679l28-30,11,17Z"/>
+                    <path class="cls-60" d="M209,659l37-37-20-18Z"/>
+                    <path class="cls-62" d="M209,659l17-55-28,24Z"/>
+                    <path class="cls-61" d="M198,628l28-24-49,14Z"/>
+                    <path class="cls-65" d="M177,618l49-14-24-35Z"/>
+                    <path class="cls-66" d="M197,675l-24,45h23Z"/>
+                    <path class="cls-61" d="M197,675l-1,45h11l17-41Z"/>
+                    <path class="cls-67" d="M207,720l3-8,3,8h-6Z"/>
+                    <path class="cls-68" d="M210,712l37,2-5,6H213Z"/>
+                    <path class="cls-63" d="M210,712l14-33,39-13-22,48Z"/>
+                </g>
+            </svg>
+            
+            <svg class="nature-layers__item nature-layers_side_right" viewBox="0 0 331 720">
+                <path class="nature-layers__backdrop" d="M1280,0h-15l-48,56-25-20-54,54,14,26,30-6,13,19-40,33,19,31,12-2,62,28,18,35,3,218-9,4-29-57-27-9-14-20,24-21-40-12,9-29-77-13-24,24-34-18-25,21-34-25-35,34,25,25-28,41,36,24,27-17,47,19-7,32,46,23,35,4,18-14,13-17,41-3,39-4,8,16-2,1-38-3,14,21-11,27,8,8,2,32,27,123-2-1-24-58-36-43-42-10,102,112h-3l-60-29-45,36,44-8,66,2v30h26V465l-2-4-4-210,6-12V192l-18-37h18V0Zm-46,544,30,134,3-1V554l-22-3-10-9Zm-58-140,20,5,1-2-9-14Zm34,58v3l-41,4,12-19,3-8Zm-38-52,2-3,52,18,18,36-26,2-34-23,1-7Zm22-220,42,19,3-2-12-29-7,6-26,4v2Zm38-17,14-18,11,1,23,51-8,29v7h-5Z" transform="translate(-951)"/>
+                <g>
+                    <path class="cls-1" d="M1048,319l60,72-26-54Z" transform="translate(-949)"/>
+                    <path class="cls-2" d="M1108,391l-84-51,24-21Z" transform="translate(-949)"/>
+                    <path class="cls-3" d="M1024,340l-5,48,89,3Z" transform="translate(-949)"/>
+                    <path class="cls-4" d="M988,315l31,73,5-48Z" transform="translate(-949)"/>
+                    <path class="cls-5" d="M1019,388l-66-37,35-36Z" transform="translate(-949)"/>
+                    <path class="cls-6" d="M1019,388l-43-12-23-25Z" transform="translate(-949)"/>
+                    <path class="cls-7" d="M1019,388l-70,30,27-42Z" transform="translate(-949)"/>
+                    <path class="cls-8" d="M949,418h77l82-27-89-3Z" transform="translate(-949)"/>
+                    <path class="cls-9" d="M1026,418l-12,8-27,17-38-25h77Z" transform="translate(-949)"/>
+                    <path class="cls-10" d="M1058,442l-32-24-12,8Z" transform="translate(-949)"/>
+                    <path class="cls-11" d="M1108,391l-50,51-32-24Z" transform="translate(-949)"/>
+                    <path class="cls-12" d="M1058,442l33,3,17-54Z" transform="translate(-949)"/>
+                    <path class="cls-13" d="M1053,476l38-31-33-3Z" transform="translate(-949)"/>
+                    <path class="cls-14" d="M1091,445l33,4-16-58Z" transform="translate(-949)"/>
+                    <path class="cls-15" d="M1091,445l9,54-47-23Z" transform="translate(-949)"/>
+                    <path class="cls-16" d="M1100,499l24-50-33-4Z" transform="translate(-949)"/>
+                    <path class="cls-17" d="M1124,449l12,55-36-5Z" transform="translate(-949)"/>
+                    <path class="cls-18" d="M1124,449l46,21-16,20-18,14Z" transform="translate(-949)"/>
+                    <path class="cls-19" d="M1173,408l14,24-4,19-15,21Z" transform="translate(-949)"/>
+                    <path class="cls-20" d="M1124,449l49-41-4,63Z" transform="translate(-949)"/>
+                    <path class="cls-21" d="M1108,391l65,17-49,41Z" transform="translate(-949)"/>
+                    <path class="cls-22" d="M1082,337l24-24,79,13Z" transform="translate(-949)"/>
+                    <path class="cls-23" d="M1082,337l95,19,8-30Z" transform="translate(-949)"/>
+                    <path class="cls-24" d="M1134,378l-52-41,95,19Z" transform="translate(-949)"/>
+                    <path class="cls-25" d="M1108,391l26-13-52-41Z" transform="translate(-949)"/>
+                    <path class="cls-26" d="M1173,408l4-4,41-36-41-12-69,35Z" transform="translate(-949)"/>
+                    <path class="cls-27" d="M1280,157h-33l-7-49,40-21v70Z" transform="translate(-949)"/>
+                    <path class="cls-28" d="M1253,481l-7-15-73,6-38-3,2-4,36,3,36-5-32-25,3-2,40,26,22-2-17-34-52-18,4-4,19,3-11-16,1-5h2l17,23,27,8,29,58Z" transform="translate(-949)"/>
+                    <path class="cls-29" d="M1203,189l44-32-25,29Z" transform="translate(-949)"/>
+                    <path class="cls-30" d="M1267,475l13-13-5-210,5-11V190l-16-33h-9l24,50-7,23-2,12h-2l-42-83-3,12,15,36-42-17-12,2,62,28,18,34Z" transform="translate(-949)"/>
+                    <path class="cls-31" d="M1247,157l-54-29,47-20Z" transform="translate(-949)"/>
+                    <path class="cls-32" d="M1247,157l-44,32,23-44Z" transform="translate(-949)"/>
+                    <path class="cls-33" d="M1226,145l-23,44-7,1-12,2-10,2,19-66Z" transform="translate(-949)"/>
+                    <path class="cls-34" d="M1174,194l19-66-34,44Z" transform="translate(-949)"/>
+                    <path class="cls-35" d="M1193,128l-34,44-7-10Z" transform="translate(-949)"/>
+                    <path class="cls-36" d="M1193,128l47-20-48-34-12,37Z" transform="translate(-949)"/>
+                    <path class="cls-37" d="M1180,111l-29,7,41-44Z" transform="translate(-949)"/>
+                    <path class="cls-38" d="M1151,118l41-44V35l-49,68Z" transform="translate(-949)"/>
+                    <path class="cls-39" d="M1192,35l-49,68-7-13Z" transform="translate(-949)"/>
+                    <path class="cls-40" d="M1192,35V74l48,34-23-54Z" transform="translate(-949)"/>
+                    <path class="cls-41" d="M1217,54l23,54,40-21Z" transform="translate(-949)"/>
+                    <path class="cls-42" d="M1280,87l-63-33,47-54h16V87Z" transform="translate(-949)"/>
+                    <path class="cls-43" d="M1280,462l-14,45,14,11V462Z" transform="translate(-949)"/>
+                    <path class="cls-44" d="M1266,507l-14-27,28-18Z" transform="translate(-949)"/>
+                    <path class="cls-45" d="M1226,499l26-19-40-3Z" transform="translate(-949)"/>
+                    <path class="cls-46" d="M1226,499l40,8-14-27Z" transform="translate(-949)"/>
+                    <path class="cls-47" d="M1226,499l40,8-25,11Z" transform="translate(-949)"/>
+                    <path class="cls-48" d="M1216,526l25-8-15-19Z" transform="translate(-949)"/>
+                    <path class="cls-49" d="M1244,553l-28-27,25-8Z" transform="translate(-949)"/>
+                    <path class="cls-50" d="M1244,553l-3-35,25-11Z" transform="translate(-949)"/>
+                    <path class="cls-51" d="M1244,553l36-27v-9l-14-10Z" transform="translate(-949)"/>
+                    <path class="cls-52" d="M1268,553l8,170h14l-8-168Z" transform="translate(-949)"/>
+                    <path class="cls-53" d="M1265,555V724l13,1-9-169Z" transform="translate(-949)"/>
+                    <path class="cls-54" d="M1244,553l41-31-3,37Z" transform="translate(-949)"/>
+                </g>
+                <g>
+                    <path class="cls-55" d="M1268,534l12,36v47l-4-1Z" transform="translate(-949)"/>
+                    <path class="cls-56" d="M1268,686l8-70-8-82V686Z" transform="translate(-949)"/>
+                    <path class="cls-57" d="M1268,686l5,2,7-20V617l-4-1Z" transform="translate(-949)"/>
+                    <path class="cls-58" d="M1226,566l13-12-17-51Z" transform="translate(-949)"/>
+                    <path class="cls-59" d="M1262,687l6-1-29-132-13,12Z" transform="translate(-949)"/>
+                    <path class="cls-56" d="M1253,690l9-3-36-121Z" transform="translate(-949)"/>
+                    <path class="cls-60" d="M1183,597l10-12,36,43,24,62Z" transform="translate(-949)"/>
+                    <path class="cls-55" d="M1183,597l-37-22,47,10Z" transform="translate(-949)"/>
+                    <path class="cls-61" d="M1253,690L1146,575l37,22Z" transform="translate(-949)"/>
+                    <path class="cls-62" d="M1271,720l9-4v4h-9Z" transform="translate(-949)"/>
+                    <path class="cls-63" d="M1139,698l49-13,65,5h-65Z" transform="translate(-949)"/>
+                    <path class="cls-64" d="M1262,687l18,15V690l-9-3-3-1Z" transform="translate(-949)"/>
+                    <path class="cls-62" d="M1253,690v30h18l-9-33Z" transform="translate(-949)"/>
+                    <path class="cls-65" d="M1262,687l9,33,9-4V702Z" transform="translate(-949)"/>
+                    <path class="cls-66" d="M1189,658l-50,40,49-12Z" transform="translate(-949)"/>
+                    <path class="cls-59" d="M1189,658l64,32-65-4Z" transform="translate(-949)"/>
+                </g>
+            </svg>
+            
+            <svg class="nature-layers__item nature-layers_side_bottom" viewBox="0 0 677 247">
+                <path class="nature-layers__backdrop" d="M738,720H579l-39-21-47-51,59-19h55l49,16,25,15,4,2-2-3-5-30,35,11,24,18,16,26v19l11,10,5-22-35-46-13-57,3-68,25-45,49,70,12,62-17,59-20,26-4,22,22-1,31-55,53-51,33-12-2-23,39,9,3,2,23-7-2,22,8,4,22,39,24-32,15,31-4,41-19,24-14,9-1,3,3,3h13l38-39,31-16,47-1,34,17-20,27-26,12H990V710l-36-24-10-12-5,7-17,12,34,15,15,12H791l-1-3-17,1-9,2-16-2-9-1Zm-6-14,20-2,9,12-22-2Z" transform="translate(-493 -475)"/>
+                <g>
+                    <path class="cls-1" d="M731.5,683l22,5-1,14Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-2" d="M753.5,688l-22-5,5-26,18,27Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-3" d="M731.5,683l-19-45,24,19Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-4" d="M731.5,683l-13,6-36-29Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-5" d="M750.5,705l-16,2-16-18Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-6" d="M731.5,683l-19-45-11,19Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-7" d="M731.5,683l-30-26-19,3Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-8" d="M701.5,657l-19,3-6-33Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-9" d="M676.5,627l25,30,11-19Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-10" d="M750.5,705l-32-16,13-6Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-11" d="M490.5,647l80,25-32,28Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-12" d="M709.5,707l9-19,21,25Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-13" d="M739.5,718l-2,2h-34l4-8Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-14" d="M709.5,707l9-19-38-29-6,38Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-15" d="M707.5,712l-4,8h-34l5-18Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-16" d="M680.5,659l-6,38-19-53Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-17" d="M669.5,720l5-18-50-13-22,31h67Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-18" d="M674.5,697l-19-53-9,44Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-19" d="M624.5,689l-22,31h-25l-39-20Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-11" d="M646.5,688l9-44-50-16Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-20" d="M605.5,628l41,60-37-11Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-21" d="M609.5,677l-4-49h-55Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-22" d="M550.5,628l59,49-39-10Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-23" d="M538.5,700l86-11-54-17Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-11" d="M550.5,628l20,39-80-20Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-24" d="M739.5,713l1,5-33-6-34-10-49-13,22-1,28,12,35,7Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-25" d="M624.5,689l-54-17,39,5Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-26" d="M609.5,677l15,12,22-1Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-27" d="M570.5,672l39,5-119-30Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-28" d="M707.5,707l-34-7-27-12Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-29" d="M767.5,692V643l-35,2Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-30" d="M773.5,692l20-26-22-2Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-31" d="M793.5,666l-22-2,39-57Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-32" d="M767.5,643l-35,2-13-57Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-33" d="M771.5,664l39-57-40,15Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-34" d="M767.5,643l-48-55h39Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-35" d="M758.5,588l-36-68-3,68h39Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-36" d="M770.5,622l40-15-12-63Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-37" d="M770.5,622l28-78-36,22Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-38" d="M758.5,588l-4-52-32-16Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-39" d="M762.5,566l36-22-50-71Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-40" d="M767.5,692V643l-9-55-4-52-32-16,26-47,14,93,8,56,3,70" transform="translate(-490.5 -473)"/>
+                    <path class="cls-41" d="M818.5,708l11,12h-40l-1-2Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-42" d="M789.5,712l28-7,3-48Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-43" d="M820.5,657l-3,48,26-18Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-44" d="M818.5,708l11,12h66Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-45" d="M818.5,708l33-20,44,32Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-19" d="M843.5,687l-23-30,53-51Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-46" d="M873.5,606l22,46-52,35Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-19" d="M851.5,688l40,30,48-37-48-21Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-47" d="M895.5,652l-22-46,62-22Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-48" d="M895.5,652l40-68,4,33Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-49" d="M920.5,635l19-18,32-42-5,60h-46Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-50" d="M935.5,584l4,33,32-42Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-23" d="M891.5,660l29-25h46l-21,39-6,7Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-51" d="M750.5,720l-10-2-1-5,20,2-28-32,32,29,4-20h6l-4,21,20-1-1,6-17,2h-21Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-52" d="M789.5,712l-1,6,30-10,33-20,40-28,29-25,19-18-44,35-52,35-26,18Z" transform="translate(-490.5 -473)"/>
+                </g>
+                <g>
+                    <path class="cls-30" d="M971.5,720l-16-14-2,14h18Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-31" d="M953.5,720l2-14-39-16Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-33" d="M916.5,690l6,30h31Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-36" d="M922.5,720l-6-30-49,3Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-37" d="M867.5,693l55,27h-40Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-39" d="M867.5,693l15,27h-64Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-53" d="M1052.5,709l-20,9,2,2h30Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-54" d="M1052.5,709l12,11h17l11-22Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-55" d="M1081.5,720l11-22,19,22h-30Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-32" d="M1111.5,720l-19-22,32-9Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-34" d="M1124.5,689l43-9-21,29-25,11h-10Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-19" d="M1124.5,689l43-9-35-17Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-44" d="M1132.5,663l-8,26-47,12Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-56" d="M1132.5,663h-47l-36,46,28-8Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-57" d="M1085.5,663l-33,42-1-25Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-58" d="M1051.5,680l1,25-37,15Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-59" d="M1015.5,720l36-15,67-14-66,18-20,9,2,2h-19Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-56" d="M1009.5,682l-7-3-3-40,18,14Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-60" d="M988.5,720v-9l4,1v8h-4Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-61" d="M1002.5,679l-6,34,13-31Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-62" d="M999.5,716l16-10-10-7Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-63" d="M1005.5,699l10,7,19-24h-22Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-64" d="M1012.5,682h22l4-43-18,8Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-65" d="M1020.5,647l18-8-16-32Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-66" d="M1017.5,652l-18-13,23-32Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-67" d="M996.5,713l13-31,8-37,5-38-2,40-8,35-13,34Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-68" d="M988.5,711l-37-25,34,5Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-69" d="M951.5,686l34,5-11-20Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-19" d="M974.5,671l-23,15-34-43Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-46" d="M917.5,643l57,28-21-41Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-70" d="M992.5,712l4,8h-4v-8Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-71" d="M1002.5,679l-16,13,4,20h2l4,8h7l-7-7Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-44" d="M999.5,639l-26,27,13,26,16-13Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-19" d="M977.5,601l-20,35,16,30,26-27Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-23" d="M944.5,579l-3,36,16,21,20-35Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-49" d="M941.5,615l3-36-41-8Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-50" d="M953.5,630l-47-33-3-26,25,23Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-72" d="M953.5,630l-36,13-11-46Z" transform="translate(-490.5 -473)"/>
+                    <path class="cls-73" d="M988.5,711l-3-19-34-62-48-59,50,57,34,64,5,20Z" transform="translate(-490.5 -473)"/>
+                </g>
+            </svg>
+        </div>
     </div>
 </body>
 </html>

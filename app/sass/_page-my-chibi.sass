@@ -1,0 +1,178 @@
+.container-my-chibi
+    width: 30%
+    position: fixed
+    top: 15rem
+    right: 10rem
+    bottom: 10rem
+    .scrollbox
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        padding: inherit
+
+.chibi-settings
+    &-list
+        &-item
+            & + &
+                margin-top: 1.5rem
+            &__title
+                margin-bottom: .5em
+    &-options
+        display: grid
+        gap: 1rem
+        &_type
+            &_small
+                grid-template-columns: repeat(10, 2.5rem)
+                .chibi-settings-options-item__label
+                    width: 2.5rem
+                    height: 2.5rem
+                    &:after
+                        border-width: 0 0 1rem 1rem
+            &_medium
+                grid-template-columns: repeat(5, 6rem)
+                .chibi-settings-options-item__label
+                    width: 6rem
+                    height: 6rem
+                    padding: .5rem
+                    &:after
+                        border-width: 0 0 2rem 2rem
+        &-item
+            &__input
+                display: none
+            &__img
+                display: block
+                width: 100%
+                height: 100%
+                object-fit: contain
+            &__label
+                display: block
+                border: .12rem solid rgba(#fff, .5)
+                position: relative
+                cursor: pointer
+                &:after
+                    content: ""
+                    position: absolute
+                    bottom: -.12rem
+                    right: -.12rem
+                    border:
+                        style: solid
+                        color: transparent transparent $blue transparent
+                    opacity: 0
+                &:hover
+                    border-color: #fff
+                &_body-color
+                    &_white
+                        background-color: #e9d1b7
+                    &_black
+                        background-color: #694521
+                    &_green
+                        background-color: #007734
+                    &_red
+                        background-color: #b80100
+                    &_dark
+                        background-color: #013655
+                &_eye-color
+                    &_blue
+                        background-color: #354a89
+                    &_red
+                        background-color: #881813
+                    &_yellow
+                        background-color: #cba135
+                    &_brown
+                        background-color: #645836
+                    &_green
+                        background-color: #49ca28
+                    &_sky
+                        background-color: #50b5fd
+                &_hair-color
+                    &_10
+                        background-color: #e2cfa4
+                    &_30
+                        background-color: #c57825
+                    &_38
+                        background-color: #da5916
+                    &_39
+                        background-color: #c24113
+                    &_46
+                        background-color: #9a6831
+                    &_48
+                        background-color: #61462b
+                    &_52
+                        background-color: #9a4c26
+                    &_56
+                        background-color: #873a24
+                    &_58
+                        background-color: #945729
+                    &_60
+                        background-color: #d6261c
+                    &_64
+                        background-color: #be0c28
+                    &_68
+                        background-color: #ec103e
+                    &_69
+                        background-color: #9c2239
+                    &_71
+                        background-color: #5f222d
+                    &_72
+                        background-color: #a24722
+                    &_76
+                        background-color: #5e2e22
+                    &_78
+                        background-color: #43272b
+                    &_80
+                        background-color: #b50d4a
+                    &_82
+                        background-color: #a91e78
+                    &_88
+                        background-color: #650c2d
+                    &_90
+                        background-color: #815c8f
+                    &_104
+                        background-color: #6a413e
+                    &_106
+                        background-color: #3b1c18
+                    &_107
+                        background-color: #362424
+                    &_112
+                        background-color: #1b2b79
+                    &_113
+                        background-color: #43307c
+                    &_114
+                        background-color: #63345b
+                    &_117
+                        background-color: #006e8a
+                    &_130
+                        background-color: #262c42
+                    &_140
+                        background-color: #dc1f71
+                    &_142
+                        background-color: #d5164b
+                    &_150
+                        background-color: #7c7c7c
+                    &_164
+                        background-color: #019c7c
+                    &_168
+                        background-color: #058ca4
+                    &_172
+                        background-color: #0274b6
+                    &_178
+                        background-color: #0a0b15
+                    &_190
+                        background-color: #e47b9c
+                    &_191
+                        background-color: #f05e76
+                    &_192
+                        background-color: #d47fa8
+                    &_194
+                        background-color: #45b77a
+                    &_195
+                        background-color: #3ab5b5
+                    &_197
+                        background-color: #6e7eb1
+                    &_200
+                        background-color: #e2e2e2
+            &__input:checked + &__label
+                border-color: $blue
+                &:after
+                    opacity: 1
