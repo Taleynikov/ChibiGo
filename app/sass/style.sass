@@ -9,7 +9,10 @@
 .app-wrap, .app-header, .app-footer, .app-content
     position: fixed
 
-.app-header, .app-footer, .container-my-chibi
+.app-header, .app-footer
+    z-index: 50 
+    
+.container-my-chibi
     z-index: 5
 
 .app-wrap
@@ -117,3 +120,13 @@
         font-size: 8rem
 
 @import _page-my-chibi.sass
+
+body:after
+    content: ""
+    width: 10px
+    height: 10px
+    position: fixed
+    top: calc(50% - 5px)
+    left: calc(50% - 5px)
+    background: #000
+    z-index: 100
