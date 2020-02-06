@@ -1,7 +1,7 @@
-document.querySelector('.nav').addEventListener('change', event => {
-    let route = event.target.getAttribute('data-route');
+// document.querySelector('.nav').addEventListener('change', event => {
+//     let route = event.target.getAttribute('data-route');
 
-    history.pushState({ foo: "bar" }, "page 2", route);
+//     history.pushState({ foo: "bar" }, "page 2", route);
 
-    console.log(route);
-})
+//     console.log(route);
+// })

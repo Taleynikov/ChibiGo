@@ -4,6 +4,7 @@
     top: 15rem
     right: 10rem
     bottom: 10rem
+    z-index: 5
     .scrollbox
         position: absolute
         top: 0
@@ -11,6 +12,8 @@
         left: 0
         right: 0
         padding: inherit
+
+$chibi-settings-border-width: .12rem
 
 .chibi-settings
     &-list
@@ -24,18 +27,17 @@
         gap: 1rem
         &_type
             &_small
-                grid-template-columns: repeat(10, 2.5rem)
+                grid-template-columns: repeat(10, 1fr)
                 .chibi-settings-options-item__label
-                    width: 2.5rem
-                    height: 2.5rem
+                    width: 100%
+                    padding-bottom: calc(100% - #{$chibi-settings-border-width} * 2)
                     &:after
                         border-width: 0 0 1rem 1rem
             &_medium
-                grid-template-columns: repeat(5, 6rem)
+                grid-template-columns: repeat(5, 1fr)
                 .chibi-settings-options-item__label
-                    width: 6rem
-                    height: 6rem
-                    padding: .5rem
+                    width: 100%
+                    padding-bottom: calc(100% - #{$chibi-settings-border-width} * 2)
                     &:after
                         border-width: 0 0 2rem 2rem
         &-item
@@ -43,23 +45,30 @@
                 display: none
             &__img
                 display: block
-                width: 100%
-                height: 100%
+                position: absolute
+                width: calc(100% - 1rem)
+                height: calc(100% - 1rem)
+                top: .5rem
+                left: .5rem
+                right: .5rem
+                bottom: .5rem
+                z-index: 1
                 object-fit: contain
             &__label
                 display: block
-                border: .12rem solid rgba(#fff, .5)
+                border: $chibi-settings-border-width solid rgba(#fff, .5)
                 position: relative
                 cursor: pointer
                 &:after
                     content: ""
                     position: absolute
-                    bottom: -.12rem
-                    right: -.12rem
+                    bottom: -$chibi-settings-border-width
+                    right: -$chibi-settings-border-width
                     border:
                         style: solid
                         color: transparent transparent $blue transparent
                     opacity: 0
+                    z-index: 2
                 &:hover
                     border-color: #fff
                 &_body-color

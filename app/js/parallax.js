@@ -1,4 +1,4 @@
-function mouseParallax() {
+const mouseParallax = () => {
     const nodes = document.querySelectorAll('[data-mouseparallax]');
 
     if (nodes.length) {
@@ -35,7 +35,7 @@ function mouseParallax() {
                     offsetY = calcOffset(coordY, sectorY, range[0]);
                 }
 
-                function calcOffset(coord, sector, range) { return Math.round((-(coord / range / sector * range)) * (10 ** fixed)) / (10 ** fixed) }
+                function calcOffset (coord, sector, range) { return Math.round((-(coord / range / sector * range)) * (10 ** fixed)) / (10 ** fixed) }
 
                 node.style.transform = `translate(${data.axis.includes('x') ? `${offsetX}%` : 0}, ${data.axis.includes('y') ? `${offsetY}%` : 0})`;
                 
