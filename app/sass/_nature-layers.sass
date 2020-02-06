@@ -1,11 +1,13 @@
+.decorate-layer
+    position: fixed
+    pointer-events: none
+
 .nature-layers
     &__item
         height: 100%
-        position: fixed
         bottom: 0
-        pointer-events: none
         z-index: 4
-        filter: brightness(20%)
+        // filter: brightness(20%)
     &__backdrop
         fill: #96b523
         fill-rule: evenodd
@@ -435,11 +437,9 @@
 .clouds-layer
     width: 102%
     height: 102%
-    position: fixed
     top: 0
     left: -1%
     z-index: 0
-    background: linear-gradient(to top, #3684c2, #3684c2 43%, #1f589a)
     .cls-2
         fill: #fff
     .cls-3
@@ -609,7 +609,6 @@
 
 .mountains-layer
     width: 102%
-    position: fixed
     top: 35%
     left: -1%
     z-index: 1
@@ -1712,3 +1711,34 @@
     .cls-549
         fill: #6e412e
                 
+.day-part
+    &_part
+        &_midnight
+            background: linear-gradient(to top, #1c2863 43%, #0f0722)
+            .mountains-layer
+                filter: brightness(0.5) grayscale(0.2) hue-rotate(410deg)
+            .clouds-layer
+                filter: sepia(0.8) hue-rotate(214deg)
+                opacity: 0.75   
+            .nature-layers__item
+                filter: brightness(15%) hue-rotate(130deg)
+        &_morning
+            background: linear-gradient(to top, #dcc1d4 43%, #60cbfb)
+            .mountains-layer
+                filter: grayscale(0.2) hue-rotate(390deg)
+            .clouds-layer
+                filter: sepia(0.5) hue-rotate(187deg)
+            .nature-layers__item
+                filter: brightness(0.75) hue-rotate(40deg)
+        &_midday
+            background: linear-gradient(to top, #2196F3 43%, #90caf9)
+            .nature-layers__item
+                filter: brightness(0.97) saturate(0.85)
+        &_afternoon
+            background: linear-gradient(to top, #ff7028 43%, #9c78ba)
+            .mountains-layer
+                filter: sepia(0.2) hue-rotate(305deg) saturate(1.3) brightness(0.92)
+            .clouds-layer
+                filter: sepia(0.3) hue-rotate(284deg)
+            .nature-layers__item
+                filter: brightness(0.95) hue-rotate(293deg)
